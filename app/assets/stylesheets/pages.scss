@@ -6,3 +6,18 @@ h2 {
     
 }
 
+
+
+body{
+    background-image: url("http://i2.ypcdn.com/blob/d15b92738a82ef593a8ba28cc23a3c6de9f9338e_500.jpg");
+}
+
+.jumbotron body .container {
+    -webkit-column-count: 1; /* Chrome, Safari, Opera */
+    -moz-column-count: 1; /* Firefox */
+    column-count: 1;
+    -webkit-column-width: 500px; /* Chrome, Safari, Opera */
+    column-width: 500px;
+   
+}
+    
