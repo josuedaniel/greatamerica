@@ -1,5 +1,11 @@
 Rails.application.routes.draw do
   
+  get '/livingroom' => 'pages#livingroom'
+  get '/electronics' => 'pages#electronics'
+  get '/beds' => 'pages#beds'
+  get '/appliances' => 'pages#appliances'
+  get '/contact' => 'pages#contact'
+  get '/apply' => 'pages#apply'
   get '/about' => 'pages#about'
   root 'pages#home'
   # The priority is based upon order of creation: first created -> highest priority.

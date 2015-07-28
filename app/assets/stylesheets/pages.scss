@@ -1,9 +1,11 @@
 // Place all the styles related to the pages controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
-h2 {
+h1 {
     text-align: center;
     
+    border-radius:18px;
+
 }
 
 
@@ -12,12 +14,24 @@ body{
     background-image: url("http://i2.ypcdn.com/blob/d15b92738a82ef593a8ba28cc23a3c6de9f9338e_500.jpg");
 }
 
-.jumbotron body .container {
-    -webkit-column-count: 1; /* Chrome, Safari, Opera */
-    -moz-column-count: 1; /* Firefox */
-    column-count: 1;
-    -webkit-column-width: 500px; /* Chrome, Safari, Opera */
-    column-width: 500px;
-   
-}
+
     
+.row{
+    position:relative;
+    clear:left;
+    width:100%;
+}
+
+.thumbnail{
+    height: 400px;
+}
+
+a {
+    left: 10px;
+}
+
+#footer{
+    clear:both;
+    margin-top:20px;
+    border-top:solid 2px black;
+}
