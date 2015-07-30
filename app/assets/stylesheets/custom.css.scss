@@ -12,3 +12,56 @@ body{
   background:         linear-gradient(90deg, #16222A 10%, #3A6073 90%); /* W3C */
         
 }
+
+h1 {
+    text-align: center;
+    
+    
+
+}
+
+
+.col-md-8 img {
+    height: 300px;
+    width: 65%;
+    background-color: blue;
+    color: white;
+    text-align: center;
+    top: 20px;
+}
+
+
+
+    
+.row{
+    position:relative;
+    clear:both;
+   
+    
+}
+
+.thumbnail{
+    height: 400px;
+}
+
+a {
+    left: 10px;
+}
+
+
+
+.col-md-4{
+    height: 400px;
+    width: 30%;
+    text-align: center;
+  
+    
+}
+p{
+    font-size: 16px;
+}
+
+.container{
+    clear:both;
+    
+}
