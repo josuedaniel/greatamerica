@@ -1,10 +1,11 @@
 Rails.application.routes.draw do
   
+  resources :contacts
   get '/livingroom' => 'pages#livingroom'
   get '/electronics' => 'pages#electronics'
   get '/beds' => 'pages#beds'
   get '/appliances' => 'pages#appliances'
-  get '/contact' => 'pages#contact'
+  get '/call' => 'pages#call'
   get '/apply' => 'pages#apply'
   get '/about' => 'pages#about'
   root 'pages#home'
