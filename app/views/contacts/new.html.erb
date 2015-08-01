@@ -1,45 +1,93 @@
 <div class="row">
-    
-    <%= form_for @contact do |f| %>
-    
-    <%= f.label :name %>
-    <%= f.text_field :name %>
-    
-    <%= f.label :DOB %>
-    <%= f.text_field :DOBe %>
-    
-    <%= f.label :SS# %>
-    <%= f.text_field :SS# %>
-    
-    <%= f.label :Phone Number %>
-    <%= f.text_field :Phone Number %>
-    
-    <%= f.label :Address %>
-    <%= f.text_field :Address %>
-    
-    <%= f.label :How Long? %>
-    <%= f.text_field :How Long? %>
-    
-    <%= f.label :Monthly Payment %>
-    <%= f.text_field :Monthly Payment %>
-    
-    <%= f.label :Lease? %>
-    <%= f.text_field :Lease? %>
-    
-    <%= f.label :Landlord name? %>
-    <%= f.text_field :Landlord name %>
-    
-    <%= f.label :number %>
-    <%= f.text_field :number %>
-    
-    <%= f.label :occupation %>
-    <%= f.text_field :occupation %>
-    
-    <%= f.label :employer %>
-    <%= f.text_field :employer %>
-    
-    <%end%>
-    
-    
-    
+    <div class="col-md-4 col-md-offset-4">
+        <div class="well">
+          <%= form_for @contact do |f| %>
+          
+                <div class="form-group">
+                    
+                  <%= f.label :name %>
+                  <%= f.text_field :name, class: 'form-control' %>
+                
+                  <%= f.label :email %>
+                  <%= f.text_field :email, class: 'form-control' %>
+               
+                  <%= f.label :DOB %>
+                  <%= f.text_field :DOB, class: 'form-control' %> 
+                 
+                  <%= f.label :SS %>
+                  <%= f.text_field :SS, class: 'form-control' %>
+                 </div>  
+              
+              <div class="form-group"> 
+                  <%= f.label :Current_Address %>
+                  <%= f.text_field :Current_Address, class: 'form-control' %>
+                 
+                  <%= f.label :city %>
+                  <%= f.text_field :city, class: 'form-control' %>
+                 
+                  <%= f.label :state %>
+                  <%= f.text_field :state, class: 'form-control' %>
+                 
+                  <%= f.label :zip %>
+                  <%= f.text_field :zip, class: 'form-control' %>
+               </div>  
+              
+              <div class="form-group"> 
+                 
+                 <%= f.label :how_long? %>
+                 <%= f.text_field :how_long?, class: 'form-control' %>
+                 
+                 <%= f.label :dependents %>
+                 <%= f.text_field :dependents, class: 'form-control' %>
+               
+              
+                 <%= f.label :home_phone_number  %>
+                 <%= f.text_field :home_phone_number, class: 'form-control'  %>
+                 
+                 <%= f.label :Cell_number  %>
+                 <%= f.text_field :Cell_number, class: 'form-control'  %>
+             </div>  
+              
+              <div class="form-group"> 
+                 
+                 <%= f.label :rent_payment  %>
+                 <%= f.text_field :rent_payment, class: 'form-control'  %>
+                 
+                 <%= f.label :Landlord  %>
+                 <%= f.text_field :Landlord, class: 'form-control'  %>
+                 
+                 <%= f.label :phone_number  %>
+                 <%= f.text_field :phone_number, class: 'form-control'  %>
+                 
+              </div>  
+              
+              <div class="form-group"> 
+                 
+                 <%= f.label :name_on_lease?  %>
+                 <%= f.text_field :name_on_lease?, class: 'form-control'  %>
+                 
+                 <%= f.label :employer  %>
+                 <%= f.text_field :employer, class: 'form-control'  %>
+                 
+                 <%= f.label :occupation  %>
+                 <%= f.text_field :occupation, class: 'form-control'  %>
+                 
+              </div>  
+              
+              <div class="form-group"> 
+                 
+                 <%= f.label :how_long?  %>
+                 <%= f.text_field :how_long?, class: 'form-control'  %>
+                 
+                 <%= f.label :supervisor  %>
+                 <%= f.text_field :supervisor, class: 'form-control'  %>
+                 
+                 <%= f.label :monthly_income  %>
+                 <%= f.text_field :monthly_income, class: 'form-control'  %>
+                 
+              </div>
+            <%= f.submit 'Submit', class: 'btn btn-default' %>
+          <%end%>
+        </div>
+    </div>
 </div>
