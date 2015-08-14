@@ -35,7 +35,7 @@
                   </div>
               </div>
               <div class="col-md-6">
-                 <div class="well"> 
+                <div class="well"> 
                       <div class="form-group"> 
                          
                          <%= f.label :dependents %>
@@ -62,37 +62,35 @@
                          <%= f.label :name_on_lease?  %>
                          <%= f.text_field :name_on_lease?, class: 'form-control'  %>
                     </div>  
-              </div>
-              </div>
+                </div>
+             </div>
         
-    
-</div>
- <div class="row">
-    <div class="col-md-6"> 
-        <div class="well">
-            <div class="form-group"> 
-                <h3>Employment Information</h3>
-                 <%= f.label :employer  %>
-                 <%= f.text_field :employer, class: 'form-control'  %>
-                 
-                 <%= f.label :occupation  %>
-                 <%= f.text_field :occupation, class: 'form-control'  %>
-                 
-                 <%= f.label :how_long? %>
-                 <%= f.text_field :how_long?, class: 'form-control' %>
-                 
-                 <%= f.label :supervisor  %>
-                 <%= f.text_field :supervisor, class: 'form-control'  %>
-                 
-                 <%= f.label :phone_number  %>
-                 <%= f.text_field :phone_number, class: 'form-control'  %>
-                 
-                 <%= f.label :monthly_income  %>
-                 <%= f.text_field :monthly_income, class: 'form-control'  %>
-                 
+    <div class="row">
+        <div class="col-md-6"> 
+            <div class="well">
+                <div class="form-group"> 
+                    <h3>Employment Information</h3>
+                     <%= f.label :employer  %>
+                     <%= f.text_field :employer, class: 'form-control'  %>
+                     
+                     <%= f.label :occupation  %>
+                     <%= f.text_field :occupation, class: 'form-control'  %>
+                     
+                     <%= f.label :how_long? %>
+                     <%= f.text_field :how_long?, class: 'form-control' %>
+                     
+                     <%= f.label :supervisor  %>
+                     <%= f.text_field :supervisor, class: 'form-control'  %>
+                     
+                     <%= f.label :phone_number  %>
+                     <%= f.text_field :phone_number, class: 'form-control'  %>
+                     
+                     <%= f.label :monthly_income  %>
+                     <%= f.text_field :monthly_income, class: 'form-control'  %>
+                     
+                </div>
+                <%= f.submit 'Submit', class: 'btn btn-default' %>
             </div>
-            <%= f.submit 'Submit', class: 'btn btn-default' %>
-        </div>
           <%end%>
         </div>
     </div>
