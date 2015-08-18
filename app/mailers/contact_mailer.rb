@@ -5,7 +5,13 @@ class ContactMailer < ActionMailer::Base
         @name = name
         @email = email
         @body = body
-       
+        @birthday = birthday
+        @social = social
+        @address = address
+        @city = city
+        @state = state
+        @zip = zip
+        
        mail(from: email, subject: 'Contact Form Message') 
     end
 end
