@@ -5,9 +5,9 @@ class ContactMailer < ActionMailer::Base
         @name = name
         @email = email
         @body = body
-        @birthday = birthday
-        @social = social
-        @address = address
+        @DOB = DOB
+        @SS# = SS#
+        @Current_Address = Current_Address
         @city = city
         @state = state
         @zip = zip
