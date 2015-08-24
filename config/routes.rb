@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
   
+  devise_for :users
   resources :contacts
   get '/livingroom' => 'pages#livingroom'
   get '/electronics' => 'pages#electronics'
