@@ -41,10 +41,10 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'devise', '3.4.1'
 
 #use stripe for handling payments
-gem 'stripe', '1.16.1'
+gem 'stripe', '1.25.0'
 
 #use figaro to hide secret keys
-gem 'figaro', '1.0.0'
+gem 'figaro', '1.1.1'
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
