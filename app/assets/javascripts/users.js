@@ -3,7 +3,7 @@ $(document).ready(function() {
   // Watch for a form submission:
   $("#form-submit-btn").click(function(event) {
     event.preventDefault();
-    $('input[type=submit]').attr('disabled', true);
+    $('input[type=submit]').prop('disabled', true);
     var error = false;
     var ccNum = $('#card_number').val(),
         cvcNum = $('#card_code').val(),
@@ -11,7 +11,7 @@ $(document).ready(function() {
         expYear = $('#card_year').val();
     if (!error) {
       // Get the Stripe token:
-      Stripe.createToken({
+        Stripe.createToken({
         number: ccNum,
         cvc: cvcNum,
         exp_month: expMonth,
