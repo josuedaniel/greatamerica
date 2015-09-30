@@ -11,7 +11,7 @@ $(document).ready(function() {
         expYear = $('#card_year').val();
     if (!error) {
       // Get the Stripe token:
-        Stripe.createToken({
+      Stripe.createToken({
         number: ccNum,
         cvc: cvcNum,
         exp_month: expMonth,
@@ -31,6 +31,3 @@ $(document).ready(function() {
     f.get(0).submit(); 
   }
 });
-
-
-
